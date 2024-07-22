@@ -33,7 +33,7 @@ RHEL（Red Hat Enterprise Linux）のOSS（オープンソースソフトウェ�
 
 ## 作成したリポジトリの使用方法：
 ### ローカルリポジトリを適用するスタンドアローン環境にてコンフィグを格納する
- /etc/yum.repos.d/rhel_local.repo
+ /etc/yum.repos.d/rhel[x]_local.repo
  
 ### 外部リポジトリを参照させないために/etc/yum.repos.d/*ファイル内全ての記載「enabled=1」→「enabled=0」
 ```sh
