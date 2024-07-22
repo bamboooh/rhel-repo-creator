@@ -34,7 +34,7 @@ RHEL用に作成されてたOSSパッケージをローカル環境でインス�
 ### ローカルリポジトリを適用するスタンドアローン環境にてコンフィグを格納する
  /etc/yum.repos.d/rhel_local.repo
  
-　　※外部リポジトリを参照させないために/etc/yum.repos.d/*のファイル全てに記載されている「enabled=1」の記載を「enabled=0」にする
+　　※外部リポジトリを参照させないために/etc/yum.repos.d/*ファイル内全ての「enabled=1」→「enabled=0」
 
 ### リポジトリ(ISOファイル)をマウントする
 ```sh
