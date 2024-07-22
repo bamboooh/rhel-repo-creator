@@ -1,0 +1,27 @@
+[RHEL7-server-local]
+name=Red Hat Enterprise Linux $releaserver - $basearch (local)
+baseurl=file:///mnt/repos/rhel-7-server-rpms
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[RHEL7-server-extras-local]
+name=Red Hat Enterprise Linux $releaserver - $basearch (local)
+baseurl=file:///mnt/repos/rhel-7-server-extras-rpms
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[RHEL7-server-dotnet-local]
+name=Red Hat Enterprise Linux $releaserver - $basearch (local)
+baseurl=file:///mnt/repos/rhel-7-server-dotnet-rpms
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[Epel-local]
+name=Red Hat Enterprise Linux $releaserver - $basearch (local)
+baseurl=file:///mnt/repos/epel
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
