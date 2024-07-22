@@ -13,7 +13,7 @@ RHEL用に作成されてたOSSパッケージをローカル環境でインス�
 
 ## リポジトリ作成
 ### ディレクトリ作成
-```
+```sh
 　mkdir /opt/repository/log
 ```
 
@@ -23,7 +23,7 @@ RHEL用に作成されてたOSSパッケージをローカル環境でインス�
 　/opt/repository/createRepositry_rh9.sh　※RHEL9以降(検証していないがRHEL8もおそらく可)
  
 ### 実行
-```
+```sh
 　cd /opt/repository
 　nohup sh createRepositry_rh[x].sh &
 ```
@@ -36,15 +36,15 @@ RHEL用に作成されてたOSSパッケージをローカル環境でインス�
 　　※外部リポジトリを参照させないために/etc/yum.repos.d/*のファイル全てに記載されている「enabled=1」の記載を「enabled=0」にする
 
 ### リポジトリ(ISOファイル)をマウントする
-```
+```sh
 　mount /dev/sr0 /mnt
 ```
 ### 確認
-```
+```sh
 　yum repolist
 ```
 ### 実行
-```
+```sh
 　yum update
 ```
 以上
