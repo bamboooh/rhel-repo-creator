@@ -12,7 +12,7 @@ RHEL（Red Hat Enterprise Linux）のOSS（オープンソースソフトウェ�
 - 公式のリポジトリが参照できるようにサブスクリプションを適用すること
 - 公式のepelリポジトリより「epel-release.noarch」をインストールすること
 
-## リポジトリ作成
+## リポジトリの作成方法
 ### ディレクトリ作成
 ```sh
 　mkdir /opt/repository/log
