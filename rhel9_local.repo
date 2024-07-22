@@ -1,0 +1,29 @@
+[rhel-9-for-x86_64-baseos-rpms]
+name=Red Hat Enterprise Linux $releaserver - $basearch (local)
+baseurl=file:///mnt/repos/rhel-9-for-x86_64-baseos-rpms
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[rhel-9-for-x86_64-appstream-rpms]
+name=Red Hat Enterprise Linux $releaserver - $basearch (local)
+baseurl=file:///mnt/repos/rhel-9-for-x86_64-appstream-rpms
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[codeready-builder-for-rhel-9-x86_64-rpms]
+name=Red Hat Enterprise Linux $releaserver - $basearch (local)
+baseurl=file:///mnt/repos/codeready-builder-for-rhel-9-x86_64-rpms
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+[epel]
+name=Red Hat Enterprise Linux $releaserver - $basearch (local)
+baseurl=file:///mnt/repos/epel
+enabled=1
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+
+
