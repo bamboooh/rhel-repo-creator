@@ -5,8 +5,9 @@ RHELローカルリポジトリ作成用Shellスクリプト
     　　２．スタンドアローンの環境にリポジトリを転送
       　３．インストール用コマンド(yum/dnf)でインストール実施
 
-注意：
-公式のepelリポジトリより「epel-release.noarch」をインストールすること
+リポジトリ作成前の注意：
+　公式のリポジトリが参照できるようにサブスクリプションを適用すること
+　公式のepelリポジトリより「epel-release.noarch」をインストールすること
 
 ■リポジトリ作成
 使用方法：
@@ -15,7 +16,7 @@ RHELローカルリポジトリ作成用Shellスクリプト
 
 shellを格納する　※環境のRHELバージョンのみで良い
 　/opt/repository/createRepositry_rh7.sh　※RHEL7以前
-　/opt/repository/createRepositry_rh9.sh　※RHEL9以降(検証していないがRHEL8も可)
+　/opt/repository/createRepositry_rh9.sh　※RHEL9以降(検証していないがRHEL8もおそらく可)
 
 実行
 　cd /opt/repository
