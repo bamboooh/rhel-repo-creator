@@ -13,11 +13,15 @@ RHEL用に作成されてたOSSパッケージをローカル環境でインス�
 
 ## リポジトリ作成
 ### ディレクトリ作成
+```
 　mkdir /opt/repository/log
+```
 
 ### shellを格納する　※環境のRHELバージョンのみで良い
 　/opt/repository/createRepositry_rh7.sh　※RHEL7以前
+ 
 　/opt/repository/createRepositry_rh9.sh　※RHEL9以降(検証していないがRHEL8もおそらく可)
+ 
 ### 実行
 ```
 　cd /opt/repository
