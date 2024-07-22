@@ -28,7 +28,7 @@ shellを格納する　※環境のRHELバージョンのみで良い
 　　※外部リポジトリを参照させないために/etc/yum.repos.d/*のファイル全てに記載されている「enabled=1」の記載を「enabled=0」にする
 
 リポジトリ(ISOファイル)をマウントする
-　mount /dev/media /mnt
+　mount /dev/sr0 /mnt
 
 確認
 　yum repolist
