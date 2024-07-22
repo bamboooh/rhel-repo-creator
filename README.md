@@ -8,6 +8,7 @@ RHEL用に作成されてたOSSパッケージをローカル環境でインス�
 3. インストール用コマンド(yum/dnf)でインストール実施
 
 ## リポジトリ作成前の注意
+- root権限で実施すること
 - 公式のリポジトリが参照できるようにサブスクリプションを適用すること
 - 公式のepelリポジトリより「epel-release.noarch」をインストールすること
 
@@ -36,7 +37,7 @@ RHEL用に作成されてたOSSパッケージをローカル環境でインス�
  
 ### 外部リポジトリを参照させないために/etc/yum.repos.d/*ファイル内全ての「enabled=1」→「enabled=0」
 ```sh
-sudo sed -i 's/enabled=1/enabled=0/g' /etc/yum.repos.d/*
+sed -i 's/enabled=1/enabled=0/g' /etc/yum.repos.d/*
 ```
 
 ### リポジトリ(ISOファイル)をマウントする
