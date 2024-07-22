@@ -25,6 +25,8 @@ RHEL用に作成されてたOSSパッケージをローカル環境でインス�
 ### 実行
 ```sh
 　cd /opt/repository
+```
+```sh
 　nohup sh createRepositry_rh[x].sh &
 ```
 
