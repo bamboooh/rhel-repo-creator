@@ -19,9 +19,13 @@ RHEL（Red Hat Enterprise Linux）のOSS（オープンソースソフトウェ�
 ```
 
 ### shellを格納する　※環境のRHELバージョンのみで良い
-　/opt/repository/createRepositry_rh7.sh　※RHEL7以前
+　/opt/repository/createRepositry_rh7.sh
+    ※RHEL7以前
+    ※実行時間目安：約3時間
  
-　/opt/repository/createRepositry_rh9.sh　※RHEL9以降(検証していないがRHEL8もおそらく可)
+　/opt/repository/createRepositry_rh9.sh
+    ※RHEL9以降(検証していないがRHEL8もおそらく可)
+    ※実行時間目安：約2時間半
  
 ### 実行
 ```sh
