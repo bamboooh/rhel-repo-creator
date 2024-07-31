@@ -22,6 +22,8 @@ RHEL（Red Hat Enterprise Linux）のOSS（オープンソースソフトウェ�
 　mkdir /opt/repository/log
 ```
 
+---
+
 ### shellを格納する　※環境のRHELバージョンのみで良い
 　/opt/repository/createRepositry_rh7.sh
   - RHEL7以前 
@@ -31,6 +33,7 @@ RHEL（Red Hat Enterprise Linux）のOSS（オープンソースソフトウェ�
   - RHEL9以降(検証していないがRHEL8もおそらく可)
   - 実行時間目安：約2時間半
     
+---
  
 ### 実行
 ```sh
@@ -40,25 +43,41 @@ RHEL（Red Hat Enterprise Linux）のOSS（オープンソースソフトウェ�
 　nohup sh createRepositry_rh[x].sh &
 ```
 
+---
+
 ## 作成したリポジトリの使用方法：
+
+---
+
 ### ローカルリポジトリを適用するスタンドアローン環境にてコンフィグを格納する
  /etc/yum.repos.d/rhel[x]_local.repo
+
+---
  
 ### 外部リポジトリを参照させないために/etc/yum.repos.d/*ファイル内全ての記載「enabled=1」→「enabled=0」
 ```sh
 sed -i 's/enabled=1/enabled=0/g' /etc/yum.repos.d/*
 ```
 
+---
+
 ### リポジトリ(ISOファイル)をマウントする
 ```sh
 　mount /dev/sr0 /mnt
 ```
+---
+
 ### 確認
 ```sh
 　yum repolist
 ```
+
+---
+
 ### 実行
 ```sh
 　yum update
 ```
+
+---
 以上
