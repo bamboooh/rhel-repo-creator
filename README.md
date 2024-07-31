@@ -19,6 +19,9 @@ RHEL（Red Hat Enterprise Linux）のOSS（オープンソースソフトウェ�
 ---
 
 ## リポジトリの作成方法
+
+---
+
 ### ディレクトリ作成
 ```sh
 　mkdir /opt/repository/log
